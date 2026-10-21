@@ -1,0 +1,18 @@
+✔ public catalog, ISBN, author, title and initial reviews (83.8827ms)
+✔ missing books and inherited object keys return 404 (59.6026ms)
+✔ registration rejects invalid inputs and duplicate users (116.2632ms)
+✔ concurrent registrations cannot overwrite a user (67.4048ms)
+✔ wrong password denied; successful login creates a session (133.7008ms)
+✔ anonymous review writes and malformed JWTs denied (13.9683ms)
+✔ create and modify review belongs to authenticated user, not body username (35.204ms)
+✔ second user cannot delete first user review; concurrent writes stay separate (179.172ms)
+✔ signed JWT accepted, expired JWT rejected (18.1667ms)
+✔ all four asynchronous Axios methods call the real HTTP server (32.7119ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1612.9272

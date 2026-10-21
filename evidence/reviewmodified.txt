@@ -1,0 +1,11 @@
+# Disposable local test request body:
+{
+  "review": "Updated: a compelling exploration of tradition and change."
+}
+
+$ curl.exe --silent --show-error -X PUT http://127.0.0.1:54311/customer/auth/review/1 -b .private/customer.cookies -H 'Content-Type: application/json' --data-binary @.private/modified.json --write-out '
+HTTP_STATUS: %{http_code}
+'
+
+{"message":"Review successfully modified","isbn":"1","reviews":{"cristian_demo":"Updated: a compelling exploration of tradition and change."}}
+HTTP_STATUS: 200

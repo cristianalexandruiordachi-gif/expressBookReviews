@@ -1,0 +1,6 @@
+$ curl.exe --silent --show-error http://127.0.0.1:54311/author/Unknown --write-out '
+HTTP_STATUS: %{http_code}
+'
+
+{"4":{"author":"Unknown","title":"The Epic Of Gilgamesh","reviews":{}},"5":{"author":"Unknown","title":"The Book Of Job","reviews":{}},"6":{"author":"Unknown","title":"One Thousand and One Nights","reviews":{}},"7":{"author":"Unknown","title":"Njál's Saga","reviews":{}}}
+HTTP_STATUS: 200

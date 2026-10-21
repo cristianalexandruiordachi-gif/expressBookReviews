@@ -1,0 +1,12 @@
+# Disposable local test request body:
+{
+  "username": "cristian_demo",
+  "password": "DisposableLab123!"
+}
+
+$ curl.exe --silent --show-error -X POST http://127.0.0.1:54311/register -H 'Content-Type: application/json' --data-binary @.private/register.json --write-out '
+HTTP_STATUS: %{http_code}
+'
+
+{"message":"User successfully registered. You can now log in."}
+HTTP_STATUS: 201

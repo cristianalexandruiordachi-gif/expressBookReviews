@@ -1,0 +1,6 @@
+$ curl.exe --silent --show-error -X DELETE http://127.0.0.1:54311/customer/auth/review/1 -b .private/customer.cookies --write-out '
+HTTP_STATUS: %{http_code}
+'
+
+{"message":"Your review was successfully deleted","isbn":"1","reviews":{}}
+HTTP_STATUS: 200

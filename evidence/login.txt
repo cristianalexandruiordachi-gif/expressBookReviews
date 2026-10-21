@@ -1,0 +1,12 @@
+# Disposable local test request body:
+{
+  "username": "cristian_demo",
+  "password": "DisposableLab123!"
+}
+
+$ curl.exe --silent --show-error -X POST http://127.0.0.1:54311/customer/login -H 'Content-Type: application/json' --data-binary @.private/login.json -c .private/customer.cookies --write-out '
+HTTP_STATUS: %{http_code}
+'
+
+{"message":"Customer successfully logged in","username":"cristian_demo"}
+HTTP_STATUS: 200
