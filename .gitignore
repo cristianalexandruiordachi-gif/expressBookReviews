@@ -1,4 +1,8 @@
 # Distribution / packaging
 node_modules
+.private/
+.env
+*.cookies
+fork-metadata.json
 
 
